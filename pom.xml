@@ -31,7 +31,7 @@
     <properties>
         <bang-bom.version>1.1.0-SNAPSHOT</bang-bom.version>
         <maven.bundle.plugin.version>5.1.2</maven.bundle.plugin.version>
-        <karaf.version>4.3.2</karaf.version>
+        <karaf.version>4.3.3</karaf.version>
         <junit.jupiter.version>5.7.2</junit.jupiter.version>
         <mockrunner.version>2.0.6</mockrunner.version>
         <mockito.version>3.11.2</mockito.version>
