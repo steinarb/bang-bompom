@@ -41,7 +41,7 @@
         <liquibase.version>3.8.0</liquibase.version>
         <jsoup.version>1.14.3</jsoup.version>
         <derby.version>10.14.2.0</derby.version>
-        <postgresql.version>42.2.23</postgresql.version>
+        <postgresql.version>42.2.24</postgresql.version>
         <jersey-feature.version>1.8.4</jersey-feature.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
