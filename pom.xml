@@ -36,7 +36,6 @@
         <mockrunner.version>2.0.6</mockrunner.version>
         <mockito.version>4.0.0</mockito.version>
         <assertj.version>3.20.2</assertj.version>
-        <mockrunner.version>2.0.6</mockrunner.version>
         <pax.jdbc.version>1.5.1</pax.jdbc.version>
         <liquibase.version>3.8.0</liquibase.version>
         <jsoup.version>1.14.3</jsoup.version>
