@@ -34,7 +34,7 @@
         <karaf.version>4.3.3</karaf.version>
         <junit.jupiter.version>5.8.1</junit.jupiter.version>
         <mockrunner.version>2.0.6</mockrunner.version>
-        <mockito.version>3.11.2</mockito.version>
+        <mockito.version>4.0.0</mockito.version>
         <assertj.version>3.20.2</assertj.version>
         <mockrunner.version>2.0.6</mockrunner.version>
         <pax.jdbc.version>1.5.1</pax.jdbc.version>
