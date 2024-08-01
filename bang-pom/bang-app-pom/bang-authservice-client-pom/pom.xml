@@ -26,7 +26,7 @@
     <description>Common maven plugin properties, configurations and dependency management, for applications using authservice</description>
 
     <properties>
-        <authservice.version>2.0.2</authservice.version>
+        <authservice.version>2.0.3</authservice.version>
     </properties>
 
 
