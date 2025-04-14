@@ -17,7 +17,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>no.priv.bang.pom</groupId>
     <artifactId>bang-bompom</artifactId>
-    <version>2.1.2-SNAPSHOT</version>
+    <version>2.1.2</version>
 
     <packaging>pom</packaging>
 
@@ -30,7 +30,7 @@
     </modules>
 
     <properties>
-        <bang-bom.version>2.1.2-SNAPSHOT</bang-bom.version>
+        <bang-bom.version>2.1.2</bang-bom.version>
         <maven.bundle.plugin.version>6.0.0</maven.bundle.plugin.version>
         <karaf.version>4.4.7</karaf.version>
         <junit.jupiter.version>5.12.2</junit.jupiter.version>
@@ -136,7 +136,7 @@
     <scm>
         <url>https://github.com/steinarb/bang-bompom</url>
         <connection>scm:git:https://github.com/steinarb/bang-bompom.git</connection>
-        <tag>HEAD</tag>
+        <tag>bang-bompom-2.1.2</tag>
     </scm>
 
     <issueManagement>
