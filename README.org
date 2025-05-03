@@ -124,3 +124,27 @@ The purpose of this maven parent, is to get a single point of change for boring 
           </dependencyManagement>
       </build>
     #+end_src
+** Why
+
+This parent POM was created because I got tired of bumping the same package versions in all of my java objects.  Some were forgotten, and after a while, lagging far behind.
+
+But why have a parent POM when [[https://www.linkedin.com/pulse/maven-getting-rid-parent-pom-mari%C3%A1n-varga/][current wisdom is to get rid of parent POMs]] and instead use stuff like [[https://github.com/dependabot][dependabot]] or [[https://blog.frankel.ch/renovate-alternative-dependabot/][renovate]] to bump versions?
+
+Several reasons:
+ 1. Since I use OSGi in my apps I have put myself in a position where certain upgrades just doesn't work (e.g. the newest version liquibase wasn't working for me for several years, for various reasons. The maintainers fixed the stuff I pointed out but since they weren't using OSGi themselves testing wasn't extensive and the roundtrip for a fix meant waiting for a new release)
+ 2. I have dependencies of my own, since I have a couple of libraries other apps depend on and releasing them in sync is easier than to let automatic upgrades have their way
+
+So why not just BOMs for the dependencies?  Well I do, everywhere the stuff I use offers up a BOM I incorporate the BOM in the dependency management of the projects that use the stuff.
+
+I have even made my own BOM, which is part of this project, for all of the packages that don't have a BOM of their own and dependency management in the projects import that BOM, rather than inherting depdendency management from the parent (because that create some tricky transitive dependencies when creating libraries used by other projects).
+
+So why use inhertance at all?  Because there are two maven concepts I use that cannot be set centrally other than when using inheritance:
+ 1. maven properties
+ 2. plugin configuration, using pluginManagement
+
+So the structure of this project is:
+ - [[pom.xml]] - sets properties, mostly version numbers of maven dependencies
+ - [[bang-bom/pom.xml]] - a BOM for stuff I use everywhere, that doesn't have a BOM of their own
+ - [[bang-pom/pom.xml]] - a parent pom that holds common maven plugin configuration in pluginManagement (this is the parent used for my library projects)
+ - [[bang-pom/bang-app-pom/pom.xml]] - a parent pom for my weabapps, that holds version numbers of all of my own Java libraries (all of which have BOMs of their own)
+ - [[bang-pom/bang-app-pom/bang-authservice-client-pom/pom.xml]] - a parent pom for webapps that adds the version of [[https://github.com/steinarb/authservice][authservice]] (this is used as the parents of all of my webapps, except for authservice)
