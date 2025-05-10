@@ -103,6 +103,11 @@
                 <artifactId>jsoup</artifactId>
                 <version>${jsoup.version}</version>
             </dependency>
+            <dependency>
+                <groupId>net.java.dev.msv</groupId>
+                <artifactId>msv-rngconverter</artifactId>
+                <version>${msv.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 

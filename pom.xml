@@ -46,6 +46,7 @@
         <postgresql.version>42.7.5</postgresql.version>
         <jersey-feature.version>1.9.10</jersey-feature.version>
         <shiro.version>2.0.4</shiro.version>
+        <msv.version>2022.7</msv.version> <!-- oracle multi schema validator, converts from XSD to RNG -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
