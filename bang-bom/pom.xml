@@ -108,6 +108,11 @@
                 <artifactId>msv-rngconverter</artifactId>
                 <version>${msv.version}</version>
             </dependency>
+            <dependency>
+                <groupId>org.relaxng</groupId>
+                <artifactId>trang</artifactId>
+                <version>${trang.version}</version>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
