@@ -41,7 +41,7 @@
         <pax.jdbc.version>1.5.7</pax.jdbc.version>
         <liquibase-feature.version>4.31.1</liquibase-feature.version>
         <liquibase.xsd-version>4.31</liquibase.xsd-version> <!-- Used to include current XSD as classpath resource for liqubase changelist parsing -->
-        <jsoup.version>1.20.1</jsoup.version>
+        <jsoup.version>1.21.1</jsoup.version>
         <derby.version>10.14.2.0</derby.version> <!-- version used by pax-jdbc 1.5.7 -->
         <postgresql.version>42.7.7</postgresql.version>
         <jersey-feature.version>1.9.11</jersey-feature.version>
