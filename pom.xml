@@ -81,21 +81,12 @@
                     <releaseProfiles>release-sign-artifact</releaseProfiles>
                     <preparationGoals>clean versions:set-property verify</preparationGoals>
                     <completionGoals>versions:set-property</completionGoals>
+                    <arguments>-Pbompom-release-prepare</arguments>
                 </configuration>
             </plugin>
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
-            </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <version>2.18.0</version>
-                <configuration>
-                    <property>bang-bom.version</property>
-                    <newVersion>${project.version}</newVersion>
-                    <generateBackupPoms>false</generateBackupPoms>
-                </configuration>
             </plugin>
         </plugins>
         <extensions>
@@ -177,6 +168,23 @@
                                 </configuration>
                             </execution>
                         </executions>
+                    </plugin>
+                </plugins>
+            </build>
+        </profile>
+        <profile>
+            <id>bompom-release-prepare</id>
+            <build>
+                <plugins>
+                    <plugin>
+                        <groupId>org.codehaus.mojo</groupId>
+                        <artifactId>versions-maven-plugin</artifactId>
+                        <version>2.18.0</version>
+                        <configuration>
+                            <property>bang-bom.version</property>
+                            <newVersion>${project.version}</newVersion>
+                            <generateBackupPoms>false</generateBackupPoms>
+                        </configuration>
                     </plugin>
                 </plugins>
             </build>

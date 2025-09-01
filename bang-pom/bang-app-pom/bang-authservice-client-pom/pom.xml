@@ -42,15 +42,6 @@
                 <artifactId>central-publishing-maven-plugin</artifactId>
                 <inherited>false</inherited>
             </plugin>
-            <plugin>
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>versions-maven-plugin</artifactId>
-                <inherited>false</inherited>
-                <configuration>
-                    <property>bang-bom.version</property>
-                    <newVersion>${project.version}</newVersion>
-                </configuration>
-            </plugin>
         </plugins>
     </build>
 </project>
