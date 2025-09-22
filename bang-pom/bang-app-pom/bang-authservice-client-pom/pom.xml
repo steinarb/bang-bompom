@@ -29,6 +29,9 @@
         <authservice.version>3.0.4</authservice.version>
     </properties>
 
+    <modules>
+        <module>dependabot-dummy-dependencies</module>
+    </modules>
 
     <build>
         <plugins>
