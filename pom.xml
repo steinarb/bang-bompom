@@ -35,7 +35,7 @@
         <karaf.version>4.4.7</karaf.version>
         <mockrunner.version>2.0.7</mockrunner.version>
         <mockito.version>5.20.0</mockito.version>
-        <assertj.version>3.27.5</assertj.version>
+        <assertj.version>3.27.6</assertj.version>
         <assertj-db.version>3.0.0</assertj-db.version>
         <pax.jdbc.version>1.5.7</pax.jdbc.version>
         <liquibase-feature.version>4.33.0</liquibase-feature.version>
