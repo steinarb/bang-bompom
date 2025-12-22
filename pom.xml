@@ -36,7 +36,7 @@
         <mockrunner.version>2.0.7</mockrunner.version>
         <mockito.version>5.21.0</mockito.version>
         <assertj.version>3.27.6</assertj.version>
-        <assertj-db.version>3.0.0</assertj-db.version>
+        <assertj-db.version>3.0.1</assertj-db.version>
         <pax.jdbc.version>1.5.7</pax.jdbc.version>
         <liquibase-feature.version>4.33.0</liquibase-feature.version>
         <liquibase.xsd-version>4.33</liquibase.xsd-version> <!-- Used to include current XSD as classpath resource for liqubase changelist parsing -->
