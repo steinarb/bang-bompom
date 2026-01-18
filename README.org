@@ -1,6 +1,6 @@
 * Master BoM and POM
 
-[[https://maven-badges.herokuapp.com/maven-central/no.priv.bang.pom/bang-bompom][file:https://maven-badges.herokuapp.com/maven-central/no.priv.bang.pom/bang-bompom/badge.svg]]
+[[https://maven-badges.sml.io/sonatype-central/no.priv.bang.pom/bang-bompom][file:https://maven-badges.sml.io/sonatype-central/no.priv.bang.pom/bang-bompom/badge.svg]]
 
 This project contains common maven plugin configurations and versions used across my project.
 
