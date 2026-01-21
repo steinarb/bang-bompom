@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Copyright 2021-2025 Steinar Bang                                     -->
+<!-- Copyright 2021-2026 Steinar Bang                                     -->
 <!--                                                                      -->
 <!-- Licensed under the Apache License, Version 2.0 (the "License");      -->
 <!-- you may not use this file except in compliance with the License.     -->
@@ -26,7 +26,7 @@
     <description>Common maven plugin properties, configurations and dependency management, for applications using authservice</description>
 
     <properties>
-        <authservice.version>3.0.6</authservice.version>
+        <authservice.version>3.0.7</authservice.version>
     </properties>
 
     <modules>
