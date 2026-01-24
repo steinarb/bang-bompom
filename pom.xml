@@ -39,7 +39,7 @@
         <assertj-db.version>3.0.1</assertj-db.version>
         <pax.jdbc.version>1.5.7</pax.jdbc.version>
         <liquibase-feature.version>5.0.1</liquibase-feature.version>
-        <liquibase.xsd-version>4.33</liquibase.xsd-version> <!-- Used to include current XSD as classpath resource for liqubase changelist parsing -->
+        <liquibase.xsd-version>5.0</liquibase.xsd-version> <!-- Used to include current XSD as classpath resource for liqubase changelist parsing -->
         <jsoup.version>1.22.1</jsoup.version>
         <derby.version>10.14.2.0</derby.version> <!-- version used by pax-jdbc 1.5.7 -->
         <postgresql.version>42.7.9</postgresql.version>
