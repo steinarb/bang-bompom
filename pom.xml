@@ -42,7 +42,7 @@
         <liquibase.xsd-version>5.0</liquibase.xsd-version> <!-- Used to include current XSD as classpath resource for liqubase changelist parsing -->
         <jsoup.version>1.22.1</jsoup.version>
         <derby.version>10.14.2.0</derby.version> <!-- version used by pax-jdbc 1.5.7 -->
-        <postgresql.version>42.7.9</postgresql.version>
+        <postgresql.version>42.7.10</postgresql.version>
         <jersey-feature.version>1.9.11</jersey-feature.version>
         <shiro.version>2.1.0</shiro.version>
         <msv.version>2022.7</msv.version> <!-- oracle multi schema validator, converts from XSD to RNG -->
