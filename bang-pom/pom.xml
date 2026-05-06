@@ -162,7 +162,7 @@
                                 <goal>npx</goal>
                             </goals>
                             <configuration>
-                                <arguments>eslint . --ext js --report-unused-disable-directives --max-warnings 0</arguments>
+                                <arguments>eslint . --report-unused-disable-directives --max-warnings 0</arguments>
                             </configuration>
                         </execution>
                         <execution>
