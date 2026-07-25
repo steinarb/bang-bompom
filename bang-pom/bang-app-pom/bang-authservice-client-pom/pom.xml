@@ -20,7 +20,7 @@ limitations under the License.
     <parent>
         <groupId>no.priv.bang.pom</groupId>
         <artifactId>bang-app-pom</artifactId>
-        <version>2.1.37-SNAPSHOT</version>
+        <version>${revision}</version>
     </parent>
     <artifactId>bang-authservice-client-pom</artifactId>
     <packaging>pom</packaging>
