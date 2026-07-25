@@ -56,6 +56,33 @@ limitations under the License.
         <pluginManagement>
             <plugins>
                 <plugin>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>flatten-maven-plugin</artifactId>
+                    <version>1.6.0</version>
+                    <configuration>
+                        <flattenMode>oss</flattenMode>
+                        <pomElements>
+                            <properties>keep</properties>
+                        </pomElements>
+                    </configuration>
+                    <executions>
+                        <execution>
+                            <id>flatten</id>
+                            <phase>process-resources</phase>
+                            <goals>
+                                <goal>flatten</goal>
+                            </goals>
+                        </execution>
+                        <execution>
+                            <id>flatten.clean</id>
+                            <phase>clean</phase>
+                            <goals>
+                                <goal>clean</goal>
+                            </goals>
+                        </execution>
+                    </executions>
+                </plugin>
+                <plugin>
                     <groupId>org.sonatype.central</groupId>
                     <artifactId>central-publishing-maven-plugin</artifactId>
                     <version>0.11.0</version>
@@ -68,6 +95,23 @@ limitations under the License.
             </plugins>
         </pluginManagement>
         <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>flatten-maven-plugin</artifactId>
+                <inherited>false</inherited>
+                <configuration>
+                    <updatePomFile>true</updatePomFile>
+                    <flattenMode>resolveCiFriendliesOnly</flattenMode>
+                    <pomElements>
+                        <properties>interpolate</properties> <!-- expand nested variables in properties -->
+                        <parent>keep</parent>
+                        <dependencyManagement>keep</dependencyManagement>
+                        <pluginManagement>keep</pluginManagement>
+                        <build>keep</build>
+                        <profiles>keep</profiles>
+                    </pomElements>
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.sonatype.central</groupId>
                 <artifactId>central-publishing-maven-plugin</artifactId>
