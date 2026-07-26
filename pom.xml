@@ -203,23 +203,6 @@ limitations under the License.
                 </plugins>
             </build>
         </profile>
-        <profile>
-            <id>bompom-release-prepare</id>
-            <build>
-                <plugins>
-                    <plugin>
-                        <groupId>org.codehaus.mojo</groupId>
-                        <artifactId>versions-maven-plugin</artifactId>
-                        <version>2.21.0</version>
-                        <configuration>
-                            <property>bang-bom.version</property>
-                            <newVersion>${project.version}</newVersion>
-                            <generateBackupPoms>false</generateBackupPoms>
-                        </configuration>
-                    </plugin>
-                </plugins>
-            </build>
-        </profile>
     </profiles>
 
 </project>
