@@ -34,7 +34,9 @@ jobs:
         run: echo "RELEASE_VERSION=${GITHUB_REF#refs/tags/}" >> $GITHUB_ENV
 
       - name: Compile, Sign and Publish Artifacts
+        env:
+          # Environment variable MAVEN_GPG_PASSPHRASE is picked up by maven-gpg-plugin 3.0.0+
+          MAVEN_GPG_PASSPHRASE: ${{ secrets.GPG_PASSPHRASE }}
         run: |
           mvn --batch-mode clean deploy -Prelease-sign-artifact -DskipTests \
-            -Drevision="${RELEASE_VERSION}" \
-            -Dgpg.passphrase="${{ secrets.GPG_PASSPHRASE }}"
+            -Drevision="${RELEASE_VERSION}"
