@@ -60,12 +60,6 @@ limitations under the License.
                     <groupId>org.codehaus.mojo</groupId>
                     <artifactId>flatten-maven-plugin</artifactId>
                     <version>1.8.0</version>
-                    <configuration>
-                        <flattenMode>oss</flattenMode>
-                        <pomElements>
-                            <properties>keep</properties>
-                        </pomElements>
-                    </configuration>
                     <executions>
                         <execution>
                             <id>flatten</id>
@@ -103,14 +97,6 @@ limitations under the License.
                 <configuration>
                     <updatePomFile>true</updatePomFile>
                     <flattenMode>resolveCiFriendliesOnly</flattenMode>
-                    <pomElements>
-                        <properties>interpolate</properties> <!-- expand nested variables in properties -->
-                        <parent>keep</parent>
-                        <dependencyManagement>keep</dependencyManagement>
-                        <pluginManagement>keep</pluginManagement>
-                        <build>keep</build>
-                        <profiles>keep</profiles>
-                    </pomElements>
                 </configuration>
             </plugin>
             <plugin>
