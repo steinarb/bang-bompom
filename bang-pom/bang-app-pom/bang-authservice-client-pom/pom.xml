@@ -28,7 +28,7 @@ limitations under the License.
     <description>Common maven plugin properties, configurations and dependency management, for applications using authservice</description>
 
     <properties>
-        <authservice.version>3.0.17</authservice.version>
+        <authservice.version>3.0.18</authservice.version>
     </properties>
 
     <modules>
