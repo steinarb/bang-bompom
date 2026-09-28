@@ -35,7 +35,7 @@ limitations under the License.
         <revision>999-SNAPSHOT</revision>
         <bang-bom.version>${revision}</bang-bom.version>
         <maven.bundle.plugin.version>6.2.0</maven.bundle.plugin.version>
-        <karaf.version>4.4.11</karaf.version>
+        <karaf.version>4.4.12</karaf.version>
         <mockrunner.version>2.0.7</mockrunner.version>
         <mockito.version>5.23.0</mockito.version>
         <assertj.version>3.27.7</assertj.version>
